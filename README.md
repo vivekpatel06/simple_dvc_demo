@@ -60,6 +60,7 @@ python src/load_data.py
 dvc repro
 ```
 whenever making new changes run following 2 command
-``` bash
+```bash
 git add . && git commit -m "your comment"
-git push origin main```
+git push origin main
+```
