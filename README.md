@@ -1,4 +1,10 @@
-create env 
+copy Repo
+
+```bash 
+git clone https://github.com/vivekpatel06/simple_dvc_demo.git
+
+```
+create env
 
 ```bash
 conda create -n wineq python=3.7 -y
@@ -18,6 +24,8 @@ pip install -r requirements.txt
 download the data from 
 
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
+
+paste downloaded data into : "simple-dvc-demo-main>>data_given"
 
 ```bash
 git init
@@ -41,7 +49,17 @@ oneliner updates  for readme
 git add . && git commit -m "update Readme.md"
 ```
 ```bash
-git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
+git remote add origin https://github.com/vivekpatel06/simple_dvc_demo.git
 git branch -M main
 git push origin main
 ```
+```bash
+python src/load_data.py
+```
+```bash
+dvc repro
+```
+whenever making new changes run following 2 command
+``` bash
+git add . && git commit -m "update Readme.md"
+git push origin main```
