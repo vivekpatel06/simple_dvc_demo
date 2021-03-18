@@ -49,7 +49,7 @@ oneliner updates  for readme
 git add . && git commit -m "update Readme.md"
 ```
 ```bash
-git remote add origin https://github.com/vivekpatel06/simple_dvc_demo.git
+git remote add origin https://github.com/<githubID>/<RepoName>.git
 git branch -M main
 git push origin main
 ```
@@ -61,5 +61,5 @@ dvc repro
 ```
 whenever making new changes run following 2 command
 ``` bash
-git add . && git commit -m "update Readme.md"
+git add . && git commit -m "your comment"
 git push origin main```
